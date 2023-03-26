@@ -85,3 +85,12 @@ async function getAnimalsNames() {
     toggleAnimalDescription();
     submitVoteBtn();
 }
+// // Reset votes
+// resetButton.addEventListener('click', () => {
+//     animals.forEach(animal => {
+//       animal.votes = 0;
+//     });
+//     displayAnimalList();
+//     animalDetails.innerHTML = '';
+//     voteCount.textContent = '';
+//   });
