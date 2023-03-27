@@ -1,11 +1,12 @@
 # Title: week2-Code-Challenge
+This code defines a webpage with a list of animals and allows users to vote for them.
 
 ## Description:
 The challenge has various deliverables;
 1. This challenge obtains information from the json database file
 2. It displays the data obtained from the file in the browser whereby the animal names are then displayed.
 3. Users can click on the name of the animal to display gify images and also click on the vote button to set votes accordingly.
-4. The user can also reset the vote count to zero and start the process again
+4. The user can also reset the vote count to zero and start the voting process again
 
 
 ## Authors and License
