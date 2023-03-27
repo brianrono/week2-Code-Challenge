@@ -44,6 +44,10 @@ h2{
     border-radius: 5px;
 }
 
+.animalNames .title:hover {
+    background-color: blueviolet;
+}
+
 .animalNames .title:active{
     scale: 1.05;
 }
@@ -59,6 +63,9 @@ h2{
     border: 5px solid #DFDFDF;
 }
 
+.singleAnimal.active:hover {
+    background-color: rgb(0, 255, 191);
+}
 .description{
     height: 250px;
     display: none;
@@ -99,4 +106,8 @@ img{
     position: sticky;
     background-color: rgb(255, 0, 0);
     
+}
+
+#resetButton:hover {
+    background-color: cyan;;
 }
