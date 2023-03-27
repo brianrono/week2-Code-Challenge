@@ -72,7 +72,7 @@ async function getAnimalNames() {
     await fetch('http://localhost:3000/characters')
         .then(res => res.json())
         .then(res => {
-            res.forEach(element => {
+            res.forEach(element => { // For each "span" element, check if the index matches the button index. If it does, update the vote count and send the vote to the database
                 output += ` <div class="singleAnimal">
                 <p class="title">${element.name}</p>
                 <div class="description">
@@ -91,12 +91,12 @@ async function getAnimalNames() {
     submitVoteBtn();
 }
 
-// Reset votes
+// Reset the votes
+const resetButton = document.getElementById('resetButton');
+
 resetButton.addEventListener('click', () => {
-    animals.forEach(animal => {
-      animal.votes = 0;
-    });
-    displayAnimalList();
-    animalDetails.innerHTML = '';
-    voteCount.textContent = '';
+  const votesCount = document.querySelectorAll('.description p span');
+  votesCount.forEach((element) => {
+    element.textContent = '0';
   });
+});

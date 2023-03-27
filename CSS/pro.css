@@ -94,3 +94,9 @@ img{
     height: 200px;
     max-width: 300px;
 }
+
+#resetButton {
+    position: sticky;
+    background-color: rgb(255, 0, 0);
+    
+}
